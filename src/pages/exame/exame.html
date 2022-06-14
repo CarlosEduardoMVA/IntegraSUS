@@ -36,9 +36,9 @@
     <!-- Conteúdo próprio desta página -->
     <section id="main-section">
 
-      <div class="container">
-        <div class="row" allign="center" style="margin-top:30px;">
-          <div class="col-sm-2"></div>
+      
+        <div class="row" allign="center" style="margin-top:20px;">
+          <div class="col-sm-1"></div>
           <div class="col-sm-8">
             <h2>Enviar Exames</h2>
             <br>
@@ -46,43 +46,43 @@
           <div class="col-sm-2"></div>
         </div>
         <div class="row" allign="center">
-          <div class="col-sm-2"></div>
+          <div class="col-sm-1"></div>
           <div class="col-sm-8">
-            <form>
+            <form id="frmExames">
               <div class="row">
                 <div class="col-md-6">
                   <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Título</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="tituloExame" class="form-label">Título</label>
+                    <input type="text" class="form-control" id="tituloExame" aria-describedby="emailHelp">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">E-mail</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="emailPaciente" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="emailPaciente" aria-describedby="emailHelp">
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-6">
                   <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Anexar Documento</label> <svg
+                    <label for="documentoAnexado" class="form-label">Anexar Documento</label> <svg
                       xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                       class="bi bi-paperclip" viewBox="0 0 16 16">
                       <path
                         d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z" />
                     </svg>
-                    <input disabled type="password" class="form-control" id="exampleInputPassword1">
+                    <input type="file" class="form-control" id="documentoAnexado">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="mb-3">
                     <label for="idPaciente" class="form-label">ID Do paciente</label>
-                    <input type="password" class="form-control" id="idPaciente">
+                    <input type="number" class="form-control" id="idPaciente">
                   </div>
                 </div>
               </div>
-              <button type="submit" class="btn align-items-right"
+              <button type="submit" id="btnSalvar" class="btn align-items-right"
                 style="background-color:#72DE92;color:white;padding-left:25px;padding-right:25px;">Enviar</button>
             </form>
           </div>
